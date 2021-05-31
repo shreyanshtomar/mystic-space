@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mystic-space/static/css/main.ebeda379.chunk.css",
+    "main.js": "/mystic-space/static/js/main.b597c612.chunk.js",
+    "main.js.map": "/mystic-space/static/js/main.b597c612.chunk.js.map",
+    "runtime-main.js": "/mystic-space/static/js/runtime-main.3a361143.js",
+    "runtime-main.js.map": "/mystic-space/static/js/runtime-main.3a361143.js.map",
+    "static/js/2.f7e7d3f0.chunk.js": "/mystic-space/static/js/2.f7e7d3f0.chunk.js",
+    "static/js/2.f7e7d3f0.chunk.js.map": "/mystic-space/static/js/2.f7e7d3f0.chunk.js.map",
+    "index.html": "/mystic-space/index.html",
+    "service-worker.js": "/mystic-space/service-worker.js",
+    "service-worker.js.map": "/mystic-space/service-worker.js.map",
+    "static/css/main.ebeda379.chunk.css.map": "/mystic-space/static/css/main.ebeda379.chunk.css.map",
+    "static/js/2.f7e7d3f0.chunk.js.LICENSE.txt": "/mystic-space/static/js/2.f7e7d3f0.chunk.js.LICENSE.txt",
+    "static/media/crown.3a4e2b15.svg": "/mystic-space/static/media/crown.3a4e2b15.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3a361143.js",
+    "static/js/2.f7e7d3f0.chunk.js",
+    "static/css/main.ebeda379.chunk.css",
+    "static/js/main.b597c612.chunk.js"
+  ]
+}
