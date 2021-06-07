@@ -1,7 +1,7 @@
 import React from "react";
 import FormInput from "../form-input/form-input.component";
 import CustomButton from "../custom-button/custom-button.components";
-import { signInWithGoogle } from "../../firebase/firebase.utils";
+import { auth, signInWithGoogle } from "../../firebase/firebase.utils";
 import "./sign-in.styles.scss";
 
 class SignIn extends React.Component {
@@ -16,7 +16,27 @@ class SignIn extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    this.setState({ email: "", password: "" });
+
+    const { email, password } = this.state;
+    try {
+      auth
+        .signInWithEmailAndPassword(email, password) //Main method to handle sign-in
+        //handling errors
+        .catch((error) => {
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          if (errorCode === "auth/wrong-password") {
+            alert("Wrong password.");
+          } else {
+            alert(errorMessage);
+          }
+        });
+
+      //TO CLEAR OUT THE FIELDS IN Form
+      this.setState({ email: "", password: "" });
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   //Dynamically Setting our properties value according to the name {[email]: value} or {[password]: value}
