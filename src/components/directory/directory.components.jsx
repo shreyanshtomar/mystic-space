@@ -30,7 +30,7 @@ class Directory extends React.Component {
           linkUrl: "",
         },
         {
-          title: "womens",
+          title: "women",
           imageUrl:
             "https://images.unsplash.com/photo-1596725649320-7f257a9da04b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80",
           size: "large",
@@ -38,7 +38,7 @@ class Directory extends React.Component {
           linkUrl: "",
         },
         {
-          title: "mens",
+          title: "men",
           imageUrl:
             "https://images.unsplash.com/photo-1532789207428-eb0c63ae912a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80",
           size: "large",
