@@ -4,6 +4,8 @@ import { ReactComponent as Logo } from "../../assets/crown.svg";
 import { auth } from "../../firebase/firebase.utils";
 import "./header.styles.scss";
 
+import { connect } from "react-redux";
+
 const Header = ({ currentUser }) => (
   <div className='header'>
     <Link className='logo-container' to='/'>
@@ -29,4 +31,10 @@ const Header = ({ currentUser }) => (
   </div>
 );
 
-export default Header;
+//This aptly named function will take any state("IN OUR CASE THE ROOT REDUCER STATE") from the Redux store and pass it to the props of the React component.
+const mapStateToProps = (state) => ({
+  currentUser: state.user.currentUser,
+});
+
+//The "connect" (chech the function definition - fn + f12) function is a higher-order function that connects the Redux store to a React component.
+export default connect(mapStateToProps)(Header);
