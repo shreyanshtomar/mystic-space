@@ -4,10 +4,13 @@ import { ReactComponent as Logo } from '../../assets/crown.svg';
 import { auth } from '../../firebase/firebase.utils';
 import CartIcon from '../cart-icon/cart-icon.components';
 import CartDropDown from '../cart-dropdown/cart-dropdown.components';
+import { selectCurrentUser } from '../../redux/user/user.selectors';
+import { selectCartHidden } from '../../redux/cart/cart.selectors';
 
 import './header.styles.scss';
 
 import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 
 const Header = ({ currentUser, hidden }) => (
   <div className='header'>
@@ -37,9 +40,14 @@ const Header = ({ currentUser, hidden }) => (
 );
 
 //This aptly named function will take any state("IN OUR CASE THE ROOT REDUCER STATE") from the Redux store and pass it to the props of the React component.
-const mapStateToProps = ({ user: { currentUser }, cart: { hidden } }) => ({
-  currentUser,
-  hidden,
+// const mapStateToProps = (state) => ({
+//   hidden: selectCartHidden(state),
+//   currentUser: selectCurrentUser(state),
+// });
+//OR(createStructuredSelector will automatically pass the top level state to the selectors)
+const mapStateToProps = createStructuredSelector({
+  hidden: selectCartHidden,
+  currentUser: selectCurrentUser,
 });
 
 //The "connect" (chech the function definition - fn + f12) function is a higher-order function that connects the Redux store to a React component.
