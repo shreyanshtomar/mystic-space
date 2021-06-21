@@ -2,7 +2,7 @@
 
 Full Stack E-Commerce App built with React, using Firebase and Stripe API, deployed with Heroku.
 
-To view the app, visit: https://mystic-space.herokuapp.com/
+To view the app, visit: https://mystic-space.netlify.app/
 
 ![homepage](https://user-images.githubusercontent.com/18248623/121796597-dc867900-cc37-11eb-931d-457d93b70602.png)
 
