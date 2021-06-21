@@ -1,5 +1,5 @@
-const SHOP_DATA = [
-    {
+const SHOP_DATA = {
+    hats: {
         id: 1,
         title: 'Hats',
         routeName: 'hats',
@@ -60,7 +60,7 @@ const SHOP_DATA = [
             }
         ]
     },
-    {
+    sneakers: {
         id: 2,
         title: 'Sneakers',
         routeName: 'sneakers',
@@ -115,7 +115,7 @@ const SHOP_DATA = [
             }
         ]
     },
-    {
+    jackets: {
         id: 3,
         title: 'Jackets',
         routeName: 'jackets',
@@ -152,27 +152,27 @@ const SHOP_DATA = [
             }
         ]
     },
-    {
+    women: {
         id: 4,
-        title: 'Womens',
-        routeName: 'womens',
+        title: 'Women',
+        routeName: 'women',
         items: [
             {
                 id: 23,
-                name: 'Blue Tanktop',
-                imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
+                name: 'Black Suit',
+                imageUrl: 'https://images.unsplash.com/photo-1614786269829-d24616faf56d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW4lMjBjbG90aGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                 price: 25
             },
             {
                 id: 24,
-                name: 'Floral Blouse',
-                imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
+                name: 'Black Jacket',
+                imageUrl: 'https://images.unsplash.com/photo-1543693087-639a38025487?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fHdvbWVuJTIwY2xvdGhpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                 price: 20
             },
             {
                 id: 25,
-                name: 'Floral Dress',
-                imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
+                name: 'Pink Dress',
+                imageUrl: 'https://images.unsplash.com/photo-1481214110143-ed630356e1bb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8d29tZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                 price: 80
             },
             {
@@ -189,8 +189,8 @@ const SHOP_DATA = [
             },
             {
                 id: 28,
-                name: 'Yellow Track Suit',
-                imageUrl: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
+                name: 'Black Track Suit',
+                imageUrl: 'https://images.pexels.com/photos/4049672/pexels-photo-4049672.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
                 price: 135
             },
             {
@@ -201,21 +201,21 @@ const SHOP_DATA = [
             }
         ]
     },
-    {
+    men: {
         id: 5,
-        title: 'Mens',
-        routeName: 'mens',
+        title: 'Men',
+        routeName: 'men',
         items: [
             {
                 id: 30,
-                name: 'Camo Down Vest',
-                imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
+                name: 'Red Sweat Shirt',
+                imageUrl: 'https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
                 price: 325
             },
             {
                 id: 31,
-                name: 'Floral T-shirt',
-                imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
+                name: 'Black High Neck',
+                imageUrl: 'https://images.pexels.com/photos/839011/pexels-photo-839011.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
                 price: 20
             },
             {
@@ -226,24 +226,24 @@ const SHOP_DATA = [
             },
             {
                 id: 33,
-                name: 'Pink T-shirt',
-                imageUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
+                name: 'White Hoodie',
+                imageUrl: 'https://images.pexels.com/photos/93827/pexels-photo-93827.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
                 price: 25
             },
             {
                 id: 34,
-                name: 'Jean Long Sleeve',
-                imageUrl: 'https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png',
+                name: 'Grey & Black Shirt',
+                imageUrl: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWVufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                 price: 40
             },
             {
                 id: 35,
-                name: 'Burgundy T-shirt',
-                imageUrl: 'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
+                name: 'Black Suit',
+                imageUrl: 'https://images.unsplash.com/photo-1521341057461-6eb5f40b07ab?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzR8fG1lbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                 price: 25
             }
         ]
     }
-];
+};
 
 export default SHOP_DATA;
