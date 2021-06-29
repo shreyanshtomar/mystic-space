@@ -1,6 +1,8 @@
 # Mystic-Space
 
-Full Stack E-Commerce App built with React, using Firebase and Stripe API, deployed with Heroku.
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+<br/>
+Full Stack E-Commerce App built with React, using Firebase and Stripe API, deployed with Heroku. 
 
 To view the app, visit: https://mystic-space-shreyanshtomar.vercel.app/
 
@@ -16,10 +18,9 @@ To view the app, visit: https://mystic-space-shreyanshtomar.vercel.app/
 
 1. React.js (Front-end)
 2. SASS and Styled Components (Styling)
-3. Redux and Redux Saga (State Management)
-4. Node.js (Back-end)
-5. Firebase (Database)
-6. Stripe API
+3. Redux (State Management)
+4. Firebase (Database)
+5. Stripe Payment API
 
 ## Work In Progress
 
@@ -32,12 +33,12 @@ Current functionality includes:
 - Load/Update data asynchronously using Firebase
 - Add items to cart
 - Remove item/items from cart
-- Responsive design(TODO)
+- Responsive design
 - Payments with Stripe
+- Enabled PWA
 
 ## Future Updates
 
-- Enable PWA
 - Product Page
 - Improve overall UX/UI and fix bugs
 - Featured Products
