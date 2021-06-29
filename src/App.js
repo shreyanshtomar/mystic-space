@@ -4,7 +4,9 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import { createStructuredSelector } from 'reselect';
 
 import { connect } from 'react-redux';
-import './App.css';
+//import './App.css';
+
+import { GlobalStyle } from './global.styles';
 
 import HomePage from './pages/homepage/homepage.components'
 import ShopPage from './pages/shop/shop.components'
@@ -52,7 +54,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        {/* <Header currentUser={ this.state.currentUser } /> Since we now using redux state we don't need to pass in the state like this*/ }
+        <GlobalStyle />
         <Header />
         <Switch>
           <Route exact path="/" component={ HomePage } />

@@ -4,6 +4,7 @@
   flex-direction: column;
   height: 350px;
   align-items: center;
+  padding: 10px;
   position: relative;
 
   .image {
@@ -20,6 +21,12 @@
     position: absolute;
     top: 255px;
     display: none;
+    @media screen and (max-width: 800px) {
+      display: block;
+      opacity: 0.9;
+      min-width: unset;
+      padding: 0 10px;
+    }
   }
 
   &:hover {
@@ -47,6 +54,23 @@
 
     .price {
       width: 10%;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 45vw;
+    padding: 10px;
+    &:hover {
+      .image {
+        opacity: unset;
+      }
+
+      .custom-button {
+        display: block;
+        opacity: 0.9;
+        min-width: unset;
+        padding: 0 10px;
+      }
     }
   }
 }
