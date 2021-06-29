@@ -12,7 +12,7 @@ import Header from './components/header/header.component'
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selectors'
-
+import ErrorBoundary from './components/error-boundary/error-boundary.components';
 
 
 const HomePage = lazy(() => import('./pages/homepage/homepage.components'));
@@ -58,12 +58,14 @@ class App extends React.Component {
         <GlobalStyle />
         <Header />
         <Switch>
-          <Suspense fallback={ <div>Loading...</div> }>
-            <Route exact path="/" component={ HomePage } />
-            <Route exact path='/checkout' component={ CheckoutPage } />
-            <Route path="/shop" component={ ShopPage } />
-            <Route exact path="/signin" render={ () => this.props.currentUser ? (<Redirect to='/' />) : (<SignInSignUp />) } />
-          </Suspense>
+          <ErrorBoundary>
+            <Suspense fallback={ <div>Loading...</div> }>
+              <Route exact path="/" component={ HomePage } />
+              <Route exact path='/checkout' component={ CheckoutPage } />
+              <Route path="/shop" component={ ShopPage } />
+              <Route exact path="/signin" render={ () => this.props.currentUser ? (<Redirect to='/' />) : (<SignInSignUp />) } />
+            </Suspense>
+          </ErrorBoundary>
         </Switch>
       </div>
     );
