@@ -1,6 +1,6 @@
 # Mystic-Space
 
-[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/shreyanshtomar/mystic-space)
 <br/>
 Full Stack E-Commerce App built with React, using Firebase and Stripe API, deployed with Heroku. 
 
