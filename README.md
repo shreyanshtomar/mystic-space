@@ -2,7 +2,7 @@
 
 Full Stack E-Commerce App built with React, using Firebase and Stripe API, deployed with Heroku.
 
-To view the app, visit: https://mystic-space.netlify.app/
+To view the app, visit: https://mystic-space-shreyanshtomar.vercel.app/
 
 ![homepage](https://user-images.githubusercontent.com/18248623/121796597-dc867900-cc37-11eb-931d-457d93b70602.png)
 
@@ -31,9 +31,9 @@ Current functionality includes:
 - Sign In
 - Load/Update data asynchronously using Firebase
 - Add items to cart
-- Remove item/items from cart(TODO)
+- Remove item/items from cart
 - Responsive design(TODO)
-- Payments with Stripe (TODO)
+- Payments with Stripe
 
 ## Future Updates
 
