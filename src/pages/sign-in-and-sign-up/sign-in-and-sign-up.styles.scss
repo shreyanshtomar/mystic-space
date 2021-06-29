@@ -3,4 +3,26 @@
   display: flex;
   justify-content: space-between;
   margin: 30px auto;
+
+  @media screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+
+    .sign-in {
+      width: 380px;
+      display: flex;
+      padding: 30px;
+      h1 {
+        font-size: 28px;
+      }
+    }
+    .sign-up {
+      width: 380px;
+      display: flex;
+      padding: 30px;
+      .title {
+        font-size: 28px;
+      }
+    }
+  }
 }
